@@ -1,0 +1,79 @@
+
+
+What you do at AMD changes everything 
+ 
+
+At AMD, we push the boundaries of what is possible.  We believe in changing the world for the better by driving innovation in high-performance computing, graphics, and visualization technologies – building blocks for gaming, immersive platforms, and the data center. 
+ 
+
+Developing great technology takes more than talent: it takes amazing people who understand collaboration, respect, and who will go the “extra mile” to achieve unthinkable results.  It takes people who have the passion and desire to disrupt the status quo, push boundaries, deliver innovation, and change the world.   If you have this type of passion, we invite you to take a look at the opportunities available to come join our team.
+ 
+
+ 
+ 
+
+What if you could learn something new at your job each and every day? Work in kernel-mode but also work with user-mode? Think software and speak hardware? What if the software you wrote was the core of a stack used by millions world-wide - everyone from pro-gamers to programmers and from content creators to corporate IT?
+
+Are you looking for a place where you'll never be pigeonholed? Where your skills and passion can carry you well beyond your job description? Where your team sets the bar high, helps you reach it, then sets it even higher?
+
+ 
+
+The Role:
+
+If you have an affinity for computer architecture, thrive in a team environment and strive to improve everything around you, we offer the opportunity to bring up new GPUs years before they hit the market, implement support for the latest OS versions, and work on cutting edge display technologies.
+
+Sounds interesting?
+
+Join us and develop value-added driver features, debug challenging kernel-mode issues and deliver high-quality software that makes a difference.
+
+ 
+
+The Person:
+
+Is a proven C++ programmer and problem-solver
+Is a great communicator and collaborator
+Understands Object-Oriented design
+Can surmount the steepest learning curves
+Has some experience with at least one of the following:
+Very large code bases
+Kernel debugging and driver development
+Hardware programming and bringup
+Operating systems and computer architecture
+GPU graphics/compute APIs: Vulkan, Open CL/GL, DirectX, DirectCompute, etc.
+#LI-CC2
+
+
+
+Requisition Number: 79276 
+Country: Canada State: Ontario City: Markham 
+Job Function:Software Engineering 
+
+ 
+
+AMD is an inclusive employer dedicated to building a diverse workforce. We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective provincial human rights codes throughout all stages of the recruitment and selection process. Any applicant who requires accommodation should contact AskHR@amd.com.
+
+AMD does not accept unsolicited resumes from headhunters, recruitment agencies or fee based recruitment services.
+
+FIND SIMILAR JOBS:
+Engineering
+Search by keyword
+Search by location
+Back to search results
+Send me alerts every 
+7
+ days 
+Share this Job
+Home
+View All Jobs
+Top Job Searches
+Products
+Solutions
+Innovations
+Audiences
+Shops
+AMD
+Follow Us
+
+© 2020 Advanced Micro Devices, Inc
+Terms and Conditions
+Privacy
