@@ -42,19 +42,36 @@ if __name__ == "__main__":
     sent = ""
     nexEx = True
     w = None
+    hasMore = False
     while nexEx:
         if not w:
+            print("*"*40)
+            for c in list(wordCluster.keys())[:10]:
+                print(f'    > {c}')
             w = input("enter a word: ")
             sent = " ".join([sent, w])
         else:
             print(f"***{sent}")
-        for i, w in enumerate(wordCluster[w.lower()]):
-            print(f'    {i} : {w}')
-        print()
-        print(sent)
+
+        if wordCluster[w.lower()]:
+            hasMore = True
+            print(hasMore)
+
+            for i, w in enumerate(wordCluster[w.lower()]):
+                print(f'    {i} : {w}')
+            print()
+            print(sent)
+        else:
+            print(f'{w.lower()} - Cluster not found!')
+            nexEx = False
+            continue
+
         w = input("choice ? : ")
         if not wordCluster[w]:
-            print("\n\n"+sent)
+            print("*"*10)
+            print(f"***{sent}")
+            print("*"*10)
+
             nexEx = False
         else:
             sent = " ".join([sent, w])
