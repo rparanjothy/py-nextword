@@ -89,6 +89,10 @@ if __name__ == "__main__":
     json.dump({k: wordCluster[k] for k in sorted(wordCluster)}, open(
         'outfile.json', 'w'), default=lambda x: isinstance(x, set) and list(x))
     # funSentences(wordCluster)
-    for i in range(10):
-        print(autoSentence(100))
-        print('-'*10)
+    while True:
+        print("--"*10)
+        for i in range(10):
+            print(f'>> {autoSentence(100)}\n')
+            # print('-'*10)
+        s=input("want more? ENTER to continue / Type QUIT to exit \n")
+        s=="QUIT" and exit()
