@@ -5,7 +5,7 @@
 from collections import defaultdict
 import json
 import requests
-
+import random
 
 def main(url=None, file=None, cluster=None):
     """
@@ -29,15 +29,20 @@ def main(url=None, file=None, cluster=None):
                 print(f'{ex!s}')
         print(f"Clusters Count : {len(cluster.keys())}")
 
+def autoSentence(limit=20):
+    stmnt=""
+    l=limit
+    # print(l)
+    data=list(wordCluster.keys())
+    while l>=0 and data:
+        cW=random.choice(data)
+        stmnt = " ".join([stmnt,cW])
+        data=list(wordCluster[cW])
+        # print(cW,fW)
+        l-=1
+    return stmnt
 
-if __name__ == "__main__":
-    wordCluster = defaultdict(set)
-    main(cluster=wordCluster, file='data.txt')
-    main(cluster=wordCluster, file='data1.txt')
-    # json.dump(wordCluster, open('outfile.json', 'w'), default=lambda x: isinstance(x, set) and list(x))
-    json.dump({k: wordCluster[k] for k in sorted(wordCluster)}, open(
-        'outfile.json', 'w'), default=lambda x: isinstance(x, set) and list(x))
-
+def funSentences(wordCluster):
     # Fun Sentences..
     sent = ""
     nexEx = True
@@ -75,3 +80,15 @@ if __name__ == "__main__":
             nexEx = False
         else:
             sent = " ".join([sent, w])
+
+if __name__ == "__main__":
+    wordCluster = defaultdict(set)
+    main(cluster=wordCluster, file='data.txt')
+    # main(cluster=wordCluster, file='data1.txt')
+    # json.dump(wordCluster, open('outfile.json', 'w'), default=lambda x: isinstance(x, set) and list(x))
+    json.dump({k: wordCluster[k] for k in sorted(wordCluster)}, open(
+        'outfile.json', 'w'), default=lambda x: isinstance(x, set) and list(x))
+    # funSentences(wordCluster)
+    for i in range(10):
+        print(autoSentence(100))
+        print('-'*10)
