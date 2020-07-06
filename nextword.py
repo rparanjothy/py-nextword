@@ -35,5 +35,26 @@ if __name__ == "__main__":
     main(cluster=wordCluster, file='data.txt')
     main(cluster=wordCluster, file='data1.txt')
     # json.dump(wordCluster, open('outfile.json', 'w'), default=lambda x: isinstance(x, set) and list(x))
-    json.dump( {k:wordCluster[k] for k in sorted(wordCluster)} , open('outfile.json', 'w'), default=lambda x: isinstance(x, set) and list(x))
-   
+    json.dump({k: wordCluster[k] for k in sorted(wordCluster)}, open(
+        'outfile.json', 'w'), default=lambda x: isinstance(x, set) and list(x))
+
+    # Fun Sentences..
+    sent = ""
+    nexEx = True
+    w = None
+    while nexEx:
+        if not w:
+            w = input("enter a word: ")
+            sent = " ".join([sent, w])
+        else:
+            print(f"***{sent}")
+        for i, w in enumerate(wordCluster[w.lower()]):
+            print(f'    {i} : {w}')
+        print()
+        print(sent)
+        w = input("choice ? : ")
+        if not wordCluster[w]:
+            print("\n\n"+sent)
+            nexEx = False
+        else:
+            sent = " ".join([sent, w])
